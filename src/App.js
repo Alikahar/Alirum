@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#fff"
   },
   hero: {
+    fontFamily: 'New Tegomin , serif',
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')`,
     height: "500px",
     backgroundPosition: "center",
@@ -89,7 +90,7 @@ export default function App() {
             </Toolbar>
           </AppBar>
           <Box className={classes.hero}>
-            <Box>React Blog</Box>
+            <Box>In a life shell</Box>
           </Box>
           <Container maxWidth="lg" className={classes.blogsContainer}>
             <Typography variant="h4" className={classes.blogTitle}>
