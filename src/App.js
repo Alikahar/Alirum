@@ -19,6 +19,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import HeroBackground from './Photos/Home/Hero.JPG'
 // import Pagination from '@material-ui/lab/Pagination';
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -26,7 +27,9 @@ const useStyles = makeStyles((theme) => ({
   },
   hero: {
     fontFamily: 'New Tegomin , serif',
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')`,
+    backgroundImage:
+      // `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      `url(${HeroBackground})`,
     height: "500px",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -85,16 +88,16 @@ export default function App() {
           <AppBar className={classes.appBar} position="static">
             <Toolbar>
               <Typography variant="h6" color="primary" >
-                Blog
+                Alirium
           </Typography>
             </Toolbar>
           </AppBar>
           <Box className={classes.hero}>
-            <Box>In a life shell</Box>
+            <Box>Alirium</Box>
           </Box>
           <Container maxWidth="lg" className={classes.blogsContainer}>
             <Typography variant="h4" className={classes.blogTitle}>
-              Articles
+              April 21
             </Typography>
             <Cards />
             {/* <Box my={4} className={classes.paginationContainer}>  <Pagination count={10} />

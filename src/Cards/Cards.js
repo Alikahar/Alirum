@@ -12,6 +12,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import Nature from '../Photos/Avatar/Nature.jpg'
+import card24 from '../Pages/April21/24/Media/card24.jpg'
 const useStyles = makeStyles((theme) => ({
     appBar: {
         backgroundColor: "#fff"
@@ -72,28 +74,27 @@ function Cards() {
                             <CardActionArea>
                                 <CardMedia
                                     className={classes.media}
-                                    image="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    image={card24}
                                     title="Contemplative Reptile"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        React useContext
+                                        Cement Creek Redwood Forest
                   </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                        across all continents except Antarctica
+                                        A bizarrely organised forest in the heart of Melbourne. A souvenir from North America.
                   </Typography>
                                 </CardContent>
                             </CardActionArea>
                             <CardActions className={classes.cardActions}>
                                 <Box className={classes.author}>
-                                    <Avatar src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+                                    <Avatar src={Nature} />
                                     <Box ml={2}>
                                         <Typography variant="subtitle2" component="p">
-                                            Guy Clemons
+                                            Nature
                     </Typography>
                                         <Typography variant="subtitle2" color="textSecondary" component="p">
-                                            May 14, 2020
+                                            24th April 21
                     </Typography>
                                     </Box>
                                 </Box>
